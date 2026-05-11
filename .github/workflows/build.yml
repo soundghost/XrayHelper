@@ -24,6 +24,10 @@ jobs:
       matrix:
         include:
           - goos: android
+            goarch: arm
+            cc: armv7a-linux-androideabi35-clang
+            cxx: armv7a-linux-androideabi35-clang++
+          - goos: android
             goarch: arm64
             cc: aarch64-linux-android35-clang
             cxx: aarch64-linux-android35-clang++
